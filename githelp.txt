@@ -1,0 +1,23 @@
+help:
+git status - show status of files (staged unstaged untracked)
+git pull [http(s)://<remote repo> or remote] - pull changes from a remote repository
+git remote [remotename remoteuri] list or add remote repos 
+git log - Options:
+	[-l|--length  numner_of _results]
+	[-f|--format format string can use {message}{author}{author_email}{committer}{committer_email}{merge}{commit}]
+	[-o|--output]  file_name
+git clone <url> [path] - clone a remote repository
+stage one or more files
+git diff  show changed files in staging area
+git modified - show what files have been modified
+git merge <merge_commit> - merge another branch or commit and head into current working tree.   see git merge -h
+initialize a new Git repository
+git reset [<commit>] <paths>  reset <paths> in staging area back to their state at <commit>.  this does not affect files in the working area.  
+git reset [ --mixed | --hard ] [<commit>] reset a repo to its pre-change state. default resets index, but not working tree.  i.e unstages all files.   --hard is dangerous, overwriting index and working tree to <commit>
+git branch - show and manage branches.  see git branch -h
+git commit <message> <name> <email> - commit staged files
+git push [http(s)://<remote repo> or remote] [-u username[:password]] - push changes back to remote
+git rm <file1> .. [file2] .. - unstage one or more files
+git checkout <branch> - check out a particular branch in the Git tree
+git fetch [uri or remote] - fetch changes from remote
+git help
